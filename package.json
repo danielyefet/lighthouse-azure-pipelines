@@ -1,0 +1,20 @@
+{
+  "name": "lighthouse-azure-pipelines",
+  "version": "0.0.0",
+  "author": "Daniel Yefet <daniel.yefet@gmail.com>",
+  "scripts": {
+    "lighthouse:assert": "lhci assert --config ./lighthouse/config.json",
+    "lighthouse:collect": "lhci collect --config ./lighthouse/config.json",
+    "lighthouse:healthcheck": "lhci healthcheck --config ./lighthouse/config.json",
+    "lighthouse:upload": "lhci upload --config ./lighthouse/config.json",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.3.8",
+    "puppeteer": "^2.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "license": "MIT"
+}
