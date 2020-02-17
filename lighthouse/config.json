@@ -3,7 +3,7 @@
       "collect": {
         "chromePath": false,
         "numberOfRuns": 5,
-        "puppeteerScript": "./lighthouse/pre-audit.js",
+        "puppeteerScript": "./lighthouse/pre-collect.js",
         "url": "REPLACE_WITH_STAGING_URL"
       },
       "assert": {
