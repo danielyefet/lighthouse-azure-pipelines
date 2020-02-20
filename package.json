@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "author": "Daniel Yefet <daniel.yefet@gmail.com>",
   "scripts": {
-    "lighthouse:assert": "lhci assert --config ./lighthouse/config.json",
-    "lighthouse:collect": "lhci collect --config ./lighthouse/config.json",
-    "lighthouse:healthcheck": "lhci healthcheck --config ./lighthouse/config.json",
-    "lighthouse:upload": "lhci upload --config ./lighthouse/config.json",
+    "lh:assert": "lhci assert --config ./lighthouse/config.json",
+    "lh:collect": "lhci collect --config ./lighthouse/config.json",
+    "lh:healthcheck": "lhci healthcheck --config ./lighthouse/config.json",
+    "lh:upload": "lhci upload --config ./lighthouse/config.json",
     "start": "node ."
   },
   "devDependencies": {

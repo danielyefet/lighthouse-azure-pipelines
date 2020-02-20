@@ -6,8 +6,17 @@ pool:
 
 stages:
   
-- stage: buildDeploy
+- stage: build
   displayName: 'Build / Deploy'
+  jobs:
+    - job: runBuild
+      displayName: 'Run Build'
+      steps:
+        - script: 'echo building...'
+
+- stage: deploy
+  displayName: 'Deploy'
+  dependsOn: build
   jobs:
     - job: runDeploymnet
       displayName: 'Run Deployment'
@@ -16,7 +25,7 @@ stages:
 
 - stage: test
   displayName: 'Test'
-  dependsOn: buildDeploy
+  dependsOn: deploy
   jobs:
   - job: runLighthouse
     displayName: 'Run Lighthouse'
